@@ -1,0 +1,103 @@
+
+        <!doctype html>
+        <html lang="en">
+        <head>
+          <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <title>RAGAS Observability Console</title>
+          <link rel="stylesheet" href="./styles.css">
+        </head>
+        <body class="surface-sand">
+          <div class="page layout-stack eyebrow-solid headline-normal modules-2 hero-align-left">
+            <section class="hero">
+              <div class="panel hero-copy">
+                <span class="eyebrow" data-health>Grounded Navigator</span>
+                <h1 id="project-title">RAGAS Observability Console</h1>
+                <p id="project-summary" class="lead">Build a polished evaluation control surface for groundedness, answer quality, and retrieval performance with report-ready summaries.</p>
+                <ul id="project-tags" class="tag-list">
+                  <li>ragas</li><li>evaluation</li><li>rag</li><li>llmops</li>
+                </ul>
+              </div>
+              <div class="panel hero-side">
+                <div class="metric-grid">
+                  <article class='card'><span>Grounded Recall</span><strong>81%</strong><em>+4.6%</em></article>
+<article class='card'><span>Citation Coverage</span><strong>90%</strong><em>+3.1%</em></article>
+<article class='card'><span>Latency</span><strong>173ms</strong><em>-18ms</em></article>
+                </div>
+                <div class="mini-grid">
+                  <article class='mini-card'><span>Project Type</span><strong>RAG</strong></article><article class='mini-card'><span>Domain</span><strong>LLM Evaluation</strong></article><article class='mini-card'><span>Application</span><strong>Grounded Navigator</strong></article><article class='mini-card'><span>Deployment</span><strong>Docker + CI</strong></article>
+                </div>
+              </div>
+            </section>
+            <section class="app-grid">
+              <article class="panel module js-module span-wide">
+  <div class="module-header">
+    <span>Query 01</span>
+    <h2>Grounded Question</h2>
+    <p>Ask a domain question and retrieve the most relevant context from the local knowledge base.</p>
+  </div>
+  <textarea class="js-input module-input-text">What is the top priority recommendation for RAGAS Observability Console?</textarea>
+  <div class="button-row">
+    <button class="js-run" data-endpoint="/query" data-input-mode="text">Search Context</button>
+  </div>
+  <pre class="js-output">Grounded answer and supporting contexts will appear here.</pre>
+</article>
+<article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Query 02</span>
+            <h2>Retrieval Quality Review</h2>
+            <p>Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 52.1,
+    &quot;activation&quot;: 48.5,
+    &quot;retention&quot;: 59.2,
+    &quot;revenue&quot;: 99.7
+  },
+  &quot;baseline&quot;: {
+    &quot;acquisition&quot;: 47.93,
+    &quot;activation&quot;: 44.62,
+    &quot;retention&quot;: 54.46,
+    &quot;revenue&quot;: 91.72
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/analyze" data-input-mode="json">Review Quality</button>
+          </div>
+          <pre class="js-output">Quality delta summary will appear here.</pre>
+        </article>
+<article class="panel module js-module span-normal">
+          <div class="module-header">
+            <span>Query 03</span>
+            <h2>Response Playbook</h2>
+            <p>Generate a recommended follow-up workflow grounded in the project context.</p>
+          </div>
+          <textarea class="js-input">{
+  &quot;prompt&quot;: &quot;Recommend the next best action for RAGAS Observability Console.&quot;,
+  &quot;features&quot;: {
+    &quot;query&quot;: &quot;Summarize the highest priority risk and recommended next step.&quot;,
+    &quot;audience&quot;: &quot;leadership&quot;
+  },
+  &quot;metrics&quot;: {
+    &quot;acquisition&quot;: 52.1,
+    &quot;activation&quot;: 48.5,
+    &quot;retention&quot;: 59.2,
+    &quot;revenue&quot;: 99.7
+  }
+}</textarea>
+          <div class="button-row">
+            <button class="js-run" data-endpoint="/recommend" data-input-mode="json">Build Response</button>
+          </div>
+          <pre class="js-output">Recommended workflow steps will appear here.</pre>
+        </article>
+            </section>
+            <footer class="footer">
+              <span>LLM Evaluation • RAG • Grounded Navigator</span>
+              <span>ragas-observability-console</span>
+            </footer>
+          </div>
+          <script id="bootstrap-data" type="application/json">{"project": {"slug": "ragas-observability-console", "title": "RAGAS Observability Console", "project_type": "rag", "domain": "LLM Evaluation", "summary": "Build a polished evaluation control surface for groundedness, answer quality, and retrieval performance with report-ready summaries.", "tags": ["ragas", "evaluation", "rag", "llmops"]}, "app_archetype": "navigator", "ui_profile": {"layout": "stack", "surface": "sand", "font_stack": "\"DM Sans\", \"Segoe UI\", sans-serif", "radius": 20, "shadow": 58, "eyebrow_style": "solid", "module_columns": 2, "hero_align": "left", "headline_mode": "normal"}, "app_modules": [{"label": "Query 01", "title": "Grounded Question", "description": "Ask a domain question and retrieve the most relevant context from the local knowledge base.", "endpoint": "/query", "input_mode": "text", "cta": "Search Context", "prefill": "What is the top priority recommendation for RAGAS Observability Console?", "hint": "Grounded answer and supporting contexts will appear here.", "span": "wide"}, {"label": "Query 02", "title": "Retrieval Quality Review", "description": "Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.", "endpoint": "/analyze", "input_mode": "json", "cta": "Review Quality", "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 52.1,\n    \"activation\": 48.5,\n    \"retention\": 59.2,\n    \"revenue\": 99.7\n  },\n  \"baseline\": {\n    \"acquisition\": 47.93,\n    \"activation\": 44.62,\n    \"retention\": 54.46,\n    \"revenue\": 91.72\n  }\n}", "hint": "Quality delta summary will appear here.", "span": "normal"}, {"label": "Query 03", "title": "Response Playbook", "description": "Generate a recommended follow-up workflow grounded in the project context.", "endpoint": "/recommend", "input_mode": "json", "cta": "Build Response", "prefill": "{\n  \"prompt\": \"Recommend the next best action for RAGAS Observability Console.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"leadership\"\n  },\n  \"metrics\": {\n    \"acquisition\": 52.1,\n    \"activation\": 48.5,\n    \"retention\": 59.2,\n    \"revenue\": 99.7\n  }\n}", "hint": "Recommended workflow steps will appear here.", "span": "normal"}], "sample_features": {"query": "Summarize the highest priority risk and recommended next step.", "audience": "leadership"}, "sample_metrics": {"acquisition": 52.1, "activation": 48.5, "retention": 59.2, "revenue": 99.7}, "knowledge_base": ["RAGAS Observability Console is positioned as a LLM Evaluation starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.", "The primary value proposition is: Build a polished evaluation control surface for groundedness, answer quality, and retrieval performance with report-ready summaries.", "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.", "Typical stakeholders include analytics, operations, product, and leadership teams working on ragas, evaluation, rag, llmops.", "Source paper: RAGAs: Automated Evaluation of Retrieval Augmented Generation", "Official repo: https://github.com/vibrantlabsai/ragas", "Production differentiation focus: Expose retrieval traces and grounding behavior through a product-style interface for llm evaluation.; Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.; Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."], "dashboard_metrics": [{"label": "Grounded Recall", "value": "81%", "delta": "+4.6%"}, {"label": "Citation Coverage", "value": "90%", "delta": "+3.1%"}, {"label": "Latency", "value": "173ms", "delta": "-18ms"}]}</script>
+          <script src="./app.js"></script>
+        </body>
+        </html>

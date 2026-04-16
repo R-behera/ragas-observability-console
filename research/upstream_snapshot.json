@@ -1,0 +1,91 @@
+{
+  "upstream": {
+    "owner": "vibrantlabsai",
+    "repo": "ragas",
+    "source_url": "https://github.com/vibrantlabsai/ragas",
+    "local_path": "/Users/Rb/Documents/LLM based projects /sources/vibrantlabsai__ragas",
+    "branch": "main",
+    "default_branch": "main",
+    "commit": "298b68274234c060deacab3cf5fb52aa3a20e885",
+    "fork_requested": false,
+    "fork_result": ""
+  },
+  "audit": {
+    "file_count": 694,
+    "text_file_count": 595,
+    "top_suffixes": [
+      [
+        ".py",
+        387
+      ],
+      [
+        ".md",
+        163
+      ],
+      [
+        ".png",
+        41
+      ],
+      [
+        ".ipynb",
+        23
+      ],
+      [
+        ".css",
+        9
+      ],
+      [
+        ".yml",
+        9
+      ],
+      [
+        "<none>",
+        9
+      ],
+      [
+        ".json",
+        7
+      ]
+    ],
+    "style_counts": {
+      "other": 245,
+      "PascalCase": 13,
+      "kebab-case": 46,
+      "hidden": 5,
+      "snake_case": 385
+    },
+    "token_hits": {
+      "TODO": [
+        "src/ragas/cli.py",
+        "src/ragas/metrics/decorator.py",
+        "src/ragas/embeddings/base.py",
+        "src/ragas/integrations/langchain.py",
+        "src/ragas/llms/base.py",
+        "src/ragas/testset/synthesizers/generate.py",
+        "tests/unit/test_prompt.py",
+        "tests/unit/test_cost.py"
+      ]
+    },
+    "findings": [
+      "No container packaging signal detected, which makes demos and deployment less portable.",
+      "Mixed filename conventions detected: PascalCase, kebab-case, snake_case.",
+      "Open maintenance markers detected: TODO in 8 file(s).",
+      "Large files that may benefit from decomposition: docs/howtos/migrations/migrate_from_v03_to_v04.md (1819 lines), src/ragas/metrics/base.py (1478 lines), src/ragas/integrations/ag_ui.py (1389 lines)."
+    ],
+    "strengths": [
+      "Repository has a top-level README.",
+      "Repository exposes a dedicated docs surface.",
+      "Repository appears to include a test surface.",
+      "Repository has GitHub Actions or another CI entry point."
+    ],
+    "largest_files": [
+      "docs/howtos/migrations/migrate_from_v03_to_v04.md (1819 lines)",
+      "src/ragas/metrics/base.py (1478 lines)",
+      "src/ragas/integrations/ag_ui.py (1389 lines)"
+    ],
+    "has_tests": true,
+    "has_docs": true,
+    "has_ci": true,
+    "has_docker": false
+  }
+}

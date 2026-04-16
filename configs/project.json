@@ -1,0 +1,114 @@
+{
+  "slug": "ragas-observability-console",
+  "title": "RAGAS Observability Console",
+  "project_type": "rag",
+  "domain": "LLM Evaluation",
+  "summary": "Build a polished evaluation control surface for groundedness, answer quality, and retrieval performance with report-ready summaries.",
+  "tags": [
+    "ragas",
+    "evaluation",
+    "rag",
+    "llmops"
+  ],
+  "accent": "#c8942c",
+  "secondary_accent": "#a9942c",
+  "dashboard_metrics": [
+    {
+      "label": "Grounded Recall",
+      "value": "81%",
+      "delta": "+4.6%"
+    },
+    {
+      "label": "Citation Coverage",
+      "value": "90%",
+      "delta": "+3.1%"
+    },
+    {
+      "label": "Latency",
+      "value": "173ms",
+      "delta": "-18ms"
+    }
+  ],
+  "sample_features": {
+    "query": "Summarize the highest priority risk and recommended next step.",
+    "audience": "leadership"
+  },
+  "sample_metrics": {
+    "acquisition": 52.1,
+    "activation": 48.5,
+    "retention": 59.2,
+    "revenue": 99.7
+  },
+  "knowledge_base": [
+    "RAGAS Observability Console is positioned as a LLM Evaluation starter that emphasizes fast iteration, clear documentation, and production-friendly interfaces.",
+    "The primary value proposition is: Build a polished evaluation control surface for groundedness, answer quality, and retrieval performance with report-ready summaries.",
+    "Recommended operating model: ship a small API, add observability, validate outputs with stakeholder review, and monitor the top business KPI every week.",
+    "Typical stakeholders include analytics, operations, product, and leadership teams working on ragas, evaluation, rag, llmops.",
+    "Source paper: RAGAs: Automated Evaluation of Retrieval Augmented Generation",
+    "Official repo: https://github.com/vibrantlabsai/ragas",
+    "Production differentiation focus: Expose retrieval traces and grounding behavior through a product-style interface for llm evaluation.; Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.; Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."
+  ],
+  "research_key": "ragas-observability-console",
+  "research_score": 9.745,
+  "paper_title": "RAGAs: Automated Evaluation of Retrieval Augmented Generation",
+  "paper_url": "https://arxiv.org/abs/2309.15217",
+  "repo_url": "https://github.com/vibrantlabsai/ragas",
+  "repo_org": "vibrantlabsai",
+  "why_high_score": [
+    "Official or primary upstream repo with 13405 GitHub stars.",
+    "Active maintenance signal with recent push at 2026-02-24T07:47:19Z.",
+    "Supercharge Your LLM Application Evaluations \ud83d\ude80"
+  ],
+  "differentiation_hooks": [
+    "Expose retrieval traces and grounding behavior through a product-style interface for llm evaluation.",
+    "Add production packaging, docs, health endpoints, and screenshots instead of stopping at a notebook or script.",
+    "Turn retrieval quality into something operators can tune and explain to non-ML stakeholders."
+  ],
+  "app_archetype": "navigator",
+  "ui_profile": {
+    "layout": "stack",
+    "surface": "sand",
+    "font_stack": "\"DM Sans\", \"Segoe UI\", sans-serif",
+    "radius": 20,
+    "shadow": 58,
+    "eyebrow_style": "solid",
+    "module_columns": 2,
+    "hero_align": "left",
+    "headline_mode": "normal"
+  },
+  "app_modules": [
+    {
+      "label": "Query 01",
+      "title": "Grounded Question",
+      "description": "Ask a domain question and retrieve the most relevant context from the local knowledge base.",
+      "endpoint": "/query",
+      "input_mode": "text",
+      "cta": "Search Context",
+      "prefill": "What is the top priority recommendation for RAGAS Observability Console?",
+      "hint": "Grounded answer and supporting contexts will appear here.",
+      "span": "wide"
+    },
+    {
+      "label": "Query 02",
+      "title": "Retrieval Quality Review",
+      "description": "Compare retrieval-side metrics against a baseline before changing prompt or chunking strategy.",
+      "endpoint": "/analyze",
+      "input_mode": "json",
+      "cta": "Review Quality",
+      "prefill": "{\n  \"metrics\": {\n    \"acquisition\": 52.1,\n    \"activation\": 48.5,\n    \"retention\": 59.2,\n    \"revenue\": 99.7\n  },\n  \"baseline\": {\n    \"acquisition\": 47.93,\n    \"activation\": 44.62,\n    \"retention\": 54.46,\n    \"revenue\": 91.72\n  }\n}",
+      "hint": "Quality delta summary will appear here.",
+      "span": "normal"
+    },
+    {
+      "label": "Query 03",
+      "title": "Response Playbook",
+      "description": "Generate a recommended follow-up workflow grounded in the project context.",
+      "endpoint": "/recommend",
+      "input_mode": "json",
+      "cta": "Build Response",
+      "prefill": "{\n  \"prompt\": \"Recommend the next best action for RAGAS Observability Console.\",\n  \"features\": {\n    \"query\": \"Summarize the highest priority risk and recommended next step.\",\n    \"audience\": \"leadership\"\n  },\n  \"metrics\": {\n    \"acquisition\": 52.1,\n    \"activation\": 48.5,\n    \"retention\": 59.2,\n    \"revenue\": 99.7\n  }\n}",
+      "hint": "Recommended workflow steps will appear here.",
+      "span": "normal"
+    }
+  ]
+}
